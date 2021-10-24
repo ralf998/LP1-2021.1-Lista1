@@ -10,7 +10,22 @@ using std::endl;
 
 int main( void )
 {
-    // TODO: Adicione seu código aqui. 
+    // TODO: Adicione seu código aqui.
+    int m, n;
+    while(cin>>m>>n) {
+        int r=m;
+        if (n>0) {
+            for (int x=m+n-1;x>m;x--) {
+                r=r+x;
+            }
+        }
+        else if (n<0) {
+            for (int x=m+n+1;x<m;x++) {
+                r=r+x;
+            }
+        }
+        cout<<r<<endl;
+    }
 
     return 0;
 }
