@@ -9,4 +9,7 @@ template <std::size_t SIZE>
 void reverse( std::array< std::string, SIZE > & arr )
 {
     /*codigo*/
+    for (int n=0;n<SIZE/2;n++) {
+        std::swap(arr[n], arr[SIZE-n-1]);
+    }
 }
